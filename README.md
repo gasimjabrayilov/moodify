@@ -6,31 +6,32 @@
 
     Added requirements.txt (for Django dependencies) and README.md.
 
-🐍 Virtual Environment
+🐍 Virtual Environment Created a virtual environment:
 
-    Created a virtual environment:
+    python3 -m venv myenv
+    source myenv/bin/activate
 
-python3 -m venv myenv
-source myenv/bin/activate
 
-    Added myenv/ to .gitignore to exclude it from version control.
+
+Added myenv/ to .gitignore to exclude it from version control.
 
 ⚙️ Django Setup
+Created a new Django project:
 
-    Created a new Django project:
+    django-admin startproject devsearch
 
-django-admin startproject devsearch
+Created a new app:
 
-    Created a new app:
 
-python3 manage.py startapp projects
+    python3 manage.py startapp projects
 
-    Registered the new app by adding it to INSTALLED_APPS in devsearch/settings.py:
+Registered the new app by adding it to INSTALLED_APPS in devsearch/settings.py:
+    'projects.apps.ProjectsConfig',
 
-'projects.apps.ProjectsConfig',
+
 
 🚀 Local Server Test
+Verified everything works by running the development server:
 
-    Verified everything works by running the development server:
+    python3 manage.py runserver
 
-python3 manage.py runserver
