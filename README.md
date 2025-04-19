@@ -52,3 +52,7 @@ then we need to go to main settings.py and
 then I moded to views.py and added : return render(request, 'projects.html')
 
 
+When you want to create new html page adding just new  view and url is enough*
+
+
+Inside of projects I created templates/projects and I moved project.html and projects.html files inside of it

@@ -6,11 +6,16 @@
     <title>Moodify</title>
     <!-- <link rel="stylesheet" href="% static 'css/style.css' %}">  I deleted {-->
 </head>
+
+{% extends  'main.html' %}
+
+{% block content %}
+
+
+    
+
 <body>
-    <header>
-        <h1>Welcome to Moodify 🎵</h1>
-        <p>Your personalized mood companion.</p>
-    </header>
+    
 
     <main>
         <section>
@@ -30,8 +35,9 @@
         {% endif %}
     </main>
 
-    <footer>
-        <p>&copy; 2025 Moodify. All rights reserved.</p>
-    </footer>
+    
 </body>
 </html>
+
+
+{% endblock content %}
