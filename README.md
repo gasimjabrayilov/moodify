@@ -35,3 +35,20 @@ Verified everything works by running the development server:
 
     python3 manage.py runserver
 
+
+
+In the projects app I created urls.py for storing
+Last thing for connecting projects file as a url on django we need on urls.py 
+    from django.urls import path, and also add "include"
+
+also in urlpatterns > path('', include('projects.urls'))
+
+
+
+I created templates and added projects.html file 
+then we need to go to main settings.py and 
+ 1. import os
+ 2. >TEMPLATES>"DIRS">os.path.join(BASE_DIR, 'templates'),
+then I moded to views.py and added : return render(request, 'projects.html')
+
+
